@@ -530,14 +530,14 @@ function Footer() {
       <div className="container-page py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
-            <img src={logoMark} alt="دروب عسير" className="h-12 w-12 object-contain bg-white rounded-xl p-1" width={48} height={48} />
+            <img src={logoMark} alt="مؤسسة ابو شهد" className="h-12 w-12 object-contain bg-white rounded-xl p-1" width={48} height={48} />
             <div>
-              <div className="text-xl font-extrabold text-white">دروب عسير</div>
+              <div className="text-xl font-extrabold text-white">مؤسسة ابو شهد</div>
               <div className="text-xs text-white/60">للمقاولات والرصف</div>
             </div>
           </div>
           <p className="mt-5 text-sm leading-relaxed max-w-md">
-            شركة سعودية متخصصة في رصف الطرق وأعمال الأسفلت والإنترلوك وتأجير المعدات
+            مؤسسة سعودية متخصصة في رصف الطرق وأعمال الأسفلت والإنترلوك وتأجير المعدات
             في كافة محافظات منطقة عسير، بخبرة تتجاوز ١٥ عاماً وأسطول حديث.
           </p>
         </div>
@@ -554,13 +554,13 @@ function Footer() {
           <h4 className="text-white font-bold mb-4">تواصل</h4>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-orange" /> {PHONE_DISPLAY}</li>
-            <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-orange" /> info@droob-aseer.sa</li>
+            <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-orange" /> info@abu-shahd.sa</li>
             <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange" /> أبها — منطقة عسير</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center text-xs text-white/60">
-        © {new Date().getFullYear()} شركة دروب عسير للمقاولات. جميع الحقوق محفوظة.
+        © {new Date().getFullYear()} مؤسسة ابو شهد للمقاولات. جميع الحقوق محفوظة.
       </div>
     </footer>
   );

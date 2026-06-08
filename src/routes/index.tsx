@@ -18,18 +18,18 @@ const PHONE_DISPLAY = "‎+966 50 000 0000";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "دروب عسير | شركة رصف طرق وسفلتة عسير - مقاول أسفلت معتمد" },
+      { title: "مؤسسة ابو شهد | مؤسسة رصف طرق وسفلتة عسير - مقاول أسفلت معتمد" },
       {
         name: "description",
         content:
-          "شركة دروب عسير الرائدة في رصف طرق عسير وسفلتة عسير وأعمال الإنترلوك وتأجير معدات الرصف وصيانة الأسفلت. خدماتنا تشمل أبها، خميس مشيط، بيشة، والنماص.",
+          "مؤسسة ابو شهد الرائدة في رصف طرق عسير وسفلتة عسير وأعمال الإنترلوك وتأجير معدات الرصف وصيانة الأسفلت. خدماتنا تشمل أبها، خميس مشيط، بيشة، والنماص.",
       },
       {
         name: "keywords",
         content:
           "رصف طرق عسير, سفلتة عسير, شركة اسفلت, مقاول اسفلت, تأجير معدات رصف, رصف شوارع, مقاول طرق, اسفلت أبها, سفلتة خميس مشيط",
       },
-      { property: "og:title", content: "دروب عسير | رصف وسفلتة عسير" },
+      { property: "og:title", content: "مؤسسة ابو شهد | رصف وسفلتة عسير" },
       { property: "og:description", content: "مقاول رصف وسفلتة معتمد في منطقة عسير." },
       { property: "og:url", content: "/" },
     ],
@@ -62,7 +62,7 @@ const features = [
 ];
 
 const testimonials = [
-  { name: "م. عبدالله القحطاني", role: "مدير مشاريع — أبها", text: "تعاملنا مع دروب عسير في رصف مخطط سكني كامل، الالتزام بالموعد والجودة فاق توقعاتنا." },
+  { name: "م. عبدالله القحطاني", role: "مدير مشاريع — أبها", text: "تعاملنا مع مؤسسة ابو شهد في رصف مخطط سكني كامل، الالتزام بالموعد والجودة فاق توقعاتنا." },
   { name: "أ. فهد الشهري", role: "مالك مجمع تجاري — خميس مشيط", text: "أفضل شركة سفلتة تعاملنا معها في المنطقة. تنفيذ احترافي ومتابعة دقيقة." },
   { name: "م. سعد الأسمري", role: "بلدية بيشة", text: "شركاء موثوقون في مشاريع البنية التحتية، وننصح بهم لكل عمل رصف وأسفلت." },
 ];
@@ -118,9 +118,9 @@ function Header() {
     >
       <div className="container-page flex h-20 items-center justify-between">
         <a href="#" className="flex items-center gap-3">
-          <img src={logoMark} alt="شعار دروب عسير" className="h-12 w-12 object-contain" width={48} height={48} />
+          <img src={logoMark} alt="شعار مؤسسة ابو شهد" className="h-12 w-12 object-contain" width={48} height={48} />
           <div className="leading-tight">
-            <div className="text-lg font-extrabold text-navy-deep">دروب عسير</div>
+            <div className="text-lg font-extrabold text-navy-deep">مؤسسة ابو شهد</div>
             <div className="text-[11px] text-muted-foreground">للمقاولات والرصف</div>
           </div>
         </a>
@@ -154,7 +154,7 @@ function Hero() {
         <div className="max-w-3xl text-white animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <div className="inline-flex items-center gap-2 rounded-full glass-dark px-4 py-2 text-xs font-medium mb-8">
             <span className="inline-block w-2 h-2 rounded-full bg-orange animate-pulse" />
-            الشركة الرائدة في رصف الطرق بمنطقة عسير
+            المؤسسة الرائدة في رصف الطرق بمنطقة عسير
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black leading-[1.1] text-balance">

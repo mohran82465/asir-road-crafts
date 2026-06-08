@@ -75,10 +75,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "شركة دروب عسير للمقاولات",
+  name: "مؤسسة ابو شهد للمقاولات",
   image: "/og.jpg",
   description:
-    "شركة متخصصة في رصف الطرق وأعمال السفلتة والإنترلوك وتأجير المعدات وصيانة الأسفلت في منطقة عسير.",
+    "مؤسسة متخصصة في رصف الطرق وأعمال السفلتة والإنترلوك وتأجير المعدات وصيانة الأسفلت في منطقة عسير.",
   areaServed: [
     "أبها", "خميس مشيط", "أحد رفيدة", "محايل عسير", "بيشة",
     "سراة عبيدة", "النماص", "بلقرن", "رجال ألمع", "تثليث", "المجاردة",
@@ -98,15 +98,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "دروب عسير | شركة رصف طرق وسفلتة في عسير" },
+      { title: "مؤسسة ابو شهد | مؤسسة رصف طرق وسفلتة في عسير" },
       {
         name: "description",
         content:
-          "شركة دروب عسير: مقاول طرق وسفلتة معتمد في منطقة عسير. رصف طرق، أعمال إنترلوك، تأجير معدات رصف، وصيانة أسفلت بأعلى المعايير.",
+          "مؤسسة ابو شهد: مقاول طرق وسفلتة معتمد في منطقة عسير. رصف طرق، أعمال إنترلوك، تأجير معدات رصف، وصيانة أسفلت بأعلى المعايير.",
       },
-      { name: "author", content: "دروب عسير" },
+      { name: "author", content: "مؤسسة ابو شهد" },
       { name: "theme-color", content: "#0B1E3F" },
-      { property: "og:title", content: "دروب عسير | رصف طرق وسفلتة عسير" },
+      { property: "og:title", content: "مؤسسة ابو شهد | رصف طرق وسفلتة عسير" },
       {
         property: "og:description",
         content: "مقاول رصف وسفلتة معتمد في عسير — رصف طرق، إنترلوك، تأجير معدات، صيانة أسفلت.",

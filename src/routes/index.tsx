@@ -11,9 +11,9 @@ import projectRoad from "@/assets/project-road.jpg";
 import projectInterlock from "@/assets/project-interlock.jpg";
 import equipmentFleet from "@/assets/equipment-fleet.jpg";
 
-const PHONE = "+966500000000";
-const WHATSAPP = "966500000000";
-const PHONE_DISPLAY = "‎+966 50 000 0000";
+const PHONE = "+966549473772";
+const WHATSAPP = "966549473772";
+const PHONE_DISPLAY = "+966 54 947 3772";
 
 export const Route = createFileRoute("/")({
   head: () => ({

@@ -279,7 +279,7 @@ function Equipment() {
   return (
     <section className="py-24 md:py-32 bg-navy-deep text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,oklch(0.7_0.18_45/0.18),transparent_50%)]" />
-      <div className="container-page relative grid lg:grid-cols-2 gap-14 items-center">
+      <div className="container-page relative grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
           <div className="inline-flex items-center gap-2 rounded-full bg-orange/20 text-orange px-4 py-1.5 text-xs font-bold mb-4">
             <span className="w-1.5 h-1.5 rounded-full bg-orange" /> معداتنا
@@ -461,7 +461,7 @@ function FinalCTA() {
   return (
     <section id="contact" className="py-24 md:py-32 relative overflow-hidden bg-navy-deep text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,oklch(0.7_0.18_45/0.25),transparent_55%)]" />
-      <div className="container-page relative grid lg:grid-cols-2 gap-14 items-center">
+      <div className="container-page relative grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
           <h2 className="text-3xl md:text-6xl font-black leading-tight text-balance">
             ابدأ مشروعك معنا اليوم

@@ -513,18 +513,18 @@ function FinalCTA() {
           <h3 className="text-2xl font-black text-navy-deep">اطلب عرض سعر مجاني</h3>
           <p className="text-sm text-muted-foreground">سنتواصل معك خلال ساعات لتأكيد التفاصيل.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <input name="name" required placeholder="الاسم الكامل" className="rounded-xl border border-input bg-background px-4 py-3 focus:border-orange focus:outline-none" />
-            <input name="phone" required type="tel" placeholder="رقم الجوال" className="rounded-xl border border-input bg-background px-4 py-3 focus:border-orange focus:outline-none" />
+            <input name="name" required placeholder="الاسم الكامل" className="rounded-xl border border-input bg-background px-4 py-3 text-right focus:border-orange focus:outline-none" />
+            <input name="phone" required type="tel" placeholder="رقم الجوال" className="rounded-xl border border-input bg-background px-4 py-3 text-right focus:border-orange focus:outline-none" />
           </div>
-          <select name="city" required defaultValue="" className="w-full rounded-xl border border-input bg-background px-4 py-3 focus:border-orange focus:outline-none">
+          <select name="city" required defaultValue="" className="w-full rounded-xl border border-input bg-background px-4 py-3 text-right focus:border-orange focus:outline-none">
             <option value="" disabled>اختر المدينة</option>
             {cities.map((c) => <option key={c}>{c}</option>)}
           </select>
-          <select name="service" required defaultValue="" className="w-full rounded-xl border border-input bg-background px-4 py-3 focus:border-orange focus:outline-none">
+          <select name="service" required defaultValue="" className="w-full rounded-xl border border-input bg-background px-4 py-3 text-right focus:border-orange focus:outline-none">
             <option value="" disabled>نوع الخدمة المطلوبة</option>
             {services.map((s) => <option key={s.title}>{s.title}</option>)}
           </select>
-          <textarea name="details" rows={3} placeholder="تفاصيل المشروع" className="w-full rounded-xl border border-input bg-background px-4 py-3 focus:border-orange focus:outline-none" />
+          <textarea name="details" rows={3} placeholder="تفاصيل المشروع" className="w-full rounded-xl border border-input bg-background px-4 py-3 text-right focus:border-orange focus:outline-none" />
           <button type="submit" className="w-full rounded-xl bg-[var(--gradient-orange)] py-4 font-bold text-white shadow-[var(--shadow-soft)] hover:scale-[1.01] transition-transform">
             إرسال الطلب عبر واتساب
           </button>

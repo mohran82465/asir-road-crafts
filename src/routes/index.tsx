@@ -254,7 +254,7 @@ function Services() {
                 style={{ animationDelay: `${i * 60}ms` }}
               >
                 <div className="absolute inset-x-0 top-0 h-1 rounded-t-2xl bg-[var(--gradient-orange)] opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="w-14 h-14 rounded-xl bg-navy-deep/5 flex items-center justify-center mb-5 group-hover:bg-[var(--gradient-orange)] transition-all">
+                <div className="w-14 h-14 rounded-xl bg-navy-deep/5 flex items-center justify-center mb-5 group-hover:bg-orange group-hover:scale-110 transition-all">
                   <Icon className="w-7 h-7 text-navy-deep group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="text-lg font-bold text-navy-deep">{s.title}</h3>

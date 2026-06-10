@@ -292,7 +292,7 @@ function Equipment() {
             ونوفّرها للتأجير أو ضمن مشاريع التنفيذ بأعلى مستويات الجاهزية والكفاءة.
           </p>
 
-          <div className="mt-10 grid sm:grid-cols-2 gap-4">
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {fleetItems.map((item) => (
               <div
                 key={item.title}
@@ -469,7 +469,7 @@ function FinalCTA() {
           <p className="mt-5 text-white/80 text-lg leading-relaxed">
             تواصل معنا للحصول على عرض سعر مجاني خلال ٢٤ ساعة، وزيارة ميدانية مجانية لموقعك في أي محافظة بعسير.
           </p>
-          <div className="mt-8 grid sm:grid-cols-2 gap-4">
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <a href={`tel:${PHONE}`} className="flex items-center gap-3 rounded-2xl glass-dark p-5 hover:bg-white/15 transition-colors">
               <Phone className="w-5 h-5 text-orange" />
               <div>

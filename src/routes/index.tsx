@@ -277,7 +277,7 @@ function Equipment() {
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-[var(--gradient-navy)] text-white relative overflow-hidden">
+    <section className="py-24 md:py-32 text-white relative overflow-hidden" style={{ background: "var(--gradient-navy)" }}>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,oklch(0.7_0.18_45/0.18),transparent_50%)]" />
       <div className="container-page relative grid lg:grid-cols-2 gap-14 items-center">
         <div>

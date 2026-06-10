@@ -488,7 +488,7 @@ function FinalCTA() {
               <MapPin className="w-5 h-5 text-orange" />
               <div>
                 <div className="text-xs text-white/60">المقر الرئيسي</div>
-                <div className="font-bold">أبها — منطقة عسير</div>
+                <div className="font-bold">بيشة — منطقة عسير</div>
               </div>
             </div>
             <div className="flex items-center gap-3 rounded-2xl glass-dark p-5">
@@ -565,7 +565,7 @@ function Footer() {
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-orange" /> {PHONE_DISPLAY}</li>
             <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-orange" /> info@abu-shahd.sa</li>
-            <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange" /> أبها — منطقة عسير</li>
+            <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange" /> بيشة — منطقة عسير</li>
           </ul>
         </div>
       </div>

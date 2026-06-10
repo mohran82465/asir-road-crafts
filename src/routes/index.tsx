@@ -131,7 +131,7 @@ function Header() {
         </nav>
         <a
           href={`tel:${PHONE}`}
-          className="hidden md:inline-flex items-center gap-2 rounded-full bg-[var(--gradient-orange)] px-5 py-2.5 text-sm font-bold text-white shadow-[var(--shadow-soft)] hover:scale-105 transition-transform"
+          className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-orange)] bg-orange px-4 py-2 text-xs md:text-sm font-bold text-white shadow-[var(--shadow-soft)] hover:scale-105 transition-transform"
         >
           <Phone className="w-4 h-4" />
           اتصل الآن
@@ -157,30 +157,30 @@ function Hero() {
             المؤسسة الرائدة في رصف الطرق بمنطقة عسير
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-black leading-[1.1] text-balance">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.15] text-balance">
             رصف وسفلتة عسير
             <span className="block mt-3 text-transparent bg-clip-text" style={{ backgroundImage: "var(--gradient-orange)" }}>
               بمعايير عالمية
             </span>
           </h1>
 
-          <p className="mt-6 text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed">
+          <p className="mt-5 md:mt-6 text-base md:text-xl text-white/85 max-w-2xl leading-relaxed">
             نقدم خدمات رصف الطرق، السفلتة، الإنترلوك، وتأجير المعدات في كافة محافظات عسير
             — بأسطول حديث وفريق هندسي معتمد وضمان جودة شامل.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-3">
-            <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 rounded-full bg-[var(--gradient-orange)] px-7 py-4 text-base font-bold text-white shadow-[var(--shadow-elegant)] hover:scale-[1.03] transition-transform">
-              <Phone className="w-5 h-5" />
+          <div className="mt-8 md:mt-10 flex flex-wrap gap-3">
+            <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-orange)] bg-orange px-5 py-3 md:px-7 md:py-4 text-sm md:text-base font-bold text-white shadow-[var(--shadow-elegant)] hover:scale-[1.03] transition-transform">
+              <Phone className="w-4 h-4 md:w-5 md:h-5" />
               اتصل الآن
             </a>
-            <a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-7 py-4 text-base font-bold text-white shadow-[var(--shadow-soft)] hover:scale-[1.03] transition-transform">
-              <MessageCircle className="w-5 h-5" />
+            <a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 md:px-7 md:py-4 text-sm md:text-base font-bold text-white shadow-[var(--shadow-soft)] hover:scale-[1.03] transition-transform">
+              <MessageCircle className="w-4 h-4 md:w-5 md:h-5" />
               واتساب
             </a>
-            <a href="#contact" className="inline-flex items-center gap-2 rounded-full glass-dark px-7 py-4 text-base font-bold text-white hover:bg-white/15 transition-colors">
+            <a href="#contact" className="inline-flex items-center gap-2 rounded-full glass-dark px-5 py-3 md:px-7 md:py-4 text-sm md:text-base font-bold text-white hover:bg-white/15 transition-colors">
               اطلب عرض سعر
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
             </a>
           </div>
 
@@ -229,7 +229,7 @@ function SectionHeader({ tag, title, desc }: { tag: string; title: string; desc?
       <div className="inline-flex items-center gap-2 rounded-full bg-orange/10 text-orange px-4 py-1.5 text-xs font-bold mb-4">
         <span className="w-1.5 h-1.5 rounded-full bg-orange" /> {tag}
       </div>
-      <h2 className="text-4xl md:text-5xl font-black text-navy-deep text-balance">{title}</h2>
+      <h2 className="text-3xl md:text-5xl font-black text-navy-deep text-balance">{title}</h2>
       {desc && <p className="mt-4 text-muted-foreground text-lg leading-relaxed">{desc}</p>}
     </div>
   );
@@ -284,7 +284,7 @@ function Equipment() {
           <div className="inline-flex items-center gap-2 rounded-full bg-orange/20 text-orange px-4 py-1.5 text-xs font-bold mb-4">
             <span className="w-1.5 h-1.5 rounded-full bg-orange" /> معداتنا
           </div>
-          <h2 className="text-4xl md:text-5xl font-black leading-tight text-balance">
+          <h2 className="text-3xl md:text-5xl font-black leading-tight text-balance">
             أسطول حديث من معدات الرصف الأوروبية
           </h2>
           <p className="mt-5 text-white/75 text-lg leading-relaxed">
@@ -463,7 +463,7 @@ function FinalCTA() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,oklch(0.7_0.18_45/0.25),transparent_55%)]" />
       <div className="container-page relative grid lg:grid-cols-2 gap-14 items-center">
         <div>
-          <h2 className="text-4xl md:text-6xl font-black leading-tight text-balance">
+          <h2 className="text-3xl md:text-6xl font-black leading-tight text-balance">
             ابدأ مشروعك معنا اليوم
           </h2>
           <p className="mt-5 text-white/80 text-lg leading-relaxed">

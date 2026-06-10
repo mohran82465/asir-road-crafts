@@ -244,7 +244,7 @@ function Services() {
           title="حلول رصف وسفلتة متكاملة"
           desc="نقدّم منظومة خدمات شاملة في رصف الطرق وأعمال الأسفلت لمشاريع الحكومة والقطاع الخاص في عسير."
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {services.map((s, i) => {
             const Icon = s.icon;
             return (
@@ -279,7 +279,7 @@ function Equipment() {
   return (
     <section className="py-24 md:py-32 bg-navy-deep text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,oklch(0.7_0.18_45/0.18),transparent_50%)]" />
-      <div className="container-page relative grid lg:grid-cols-2 gap-14 items-center">
+      <div className="container-page relative grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
           <div className="inline-flex items-center gap-2 rounded-full bg-orange/20 text-orange px-4 py-1.5 text-xs font-bold mb-4">
             <span className="w-1.5 h-1.5 rounded-full bg-orange" /> معداتنا
@@ -292,7 +292,7 @@ function Equipment() {
             ونوفّرها للتأجير أو ضمن مشاريع التنفيذ بأعلى مستويات الجاهزية والكفاءة.
           </p>
 
-          <div className="mt-10 grid sm:grid-cols-2 gap-4">
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {fleetItems.map((item) => (
               <div
                 key={item.title}
@@ -337,7 +337,7 @@ function Projects() {
           title="مشاريع نفخر بها في عسير"
           desc="نماذج مختارة من أحدث مشاريعنا المنفذة بأعلى المعايير الفنية."
         />
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {items.map((p) => (
             <article key={p.title} className="group relative overflow-hidden rounded-3xl bg-card shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-elegant)] transition-all">
               <div className="aspect-[4/3] overflow-hidden">
@@ -366,7 +366,7 @@ function WhyUs() {
           title="نختار التميّز في كل تفاصيل العمل"
           desc="ما يميّز شركة دروب عسير عن غيرها في سوق رصف الطرق."
         />
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((f) => {
             const Icon = f.icon;
             return (
@@ -414,7 +414,7 @@ function Testimonials() {
     <section className="py-24 md:py-32">
       <div className="container-page">
         <SectionHeader tag="آراء العملاء" title="ثقة عملاءنا أساس نجاحنا" />
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((t) => (
             <figure key={t.name} className="relative rounded-3xl bg-card p-8 border border-border shadow-[var(--shadow-soft)]">
               <Quote className="absolute top-6 left-6 w-10 h-10 text-orange/20" />
@@ -461,7 +461,7 @@ function FinalCTA() {
   return (
     <section id="contact" className="py-24 md:py-32 relative overflow-hidden bg-navy-deep text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,oklch(0.7_0.18_45/0.25),transparent_55%)]" />
-      <div className="container-page relative grid lg:grid-cols-2 gap-14 items-center">
+      <div className="container-page relative grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
           <h2 className="text-3xl md:text-6xl font-black leading-tight text-balance">
             ابدأ مشروعك معنا اليوم
@@ -469,7 +469,7 @@ function FinalCTA() {
           <p className="mt-5 text-white/80 text-lg leading-relaxed">
             تواصل معنا للحصول على عرض سعر مجاني خلال ٢٤ ساعة، وزيارة ميدانية مجانية لموقعك في أي محافظة بعسير.
           </p>
-          <div className="mt-8 grid sm:grid-cols-2 gap-4">
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <a href={`tel:${PHONE}`} className="flex items-center gap-3 rounded-2xl glass-dark p-5 hover:bg-white/15 transition-colors">
               <Phone className="w-5 h-5 text-orange" />
               <div>
@@ -512,7 +512,7 @@ function FinalCTA() {
         >
           <h3 className="text-2xl font-black text-navy-deep">اطلب عرض سعر مجاني</h3>
           <p className="text-sm text-muted-foreground">سنتواصل معك خلال ساعات لتأكيد التفاصيل.</p>
-          <div className="grid sm:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <input name="name" required placeholder="الاسم الكامل" className="rounded-xl border border-input bg-background px-4 py-3 focus:border-orange focus:outline-none" />
             <input name="phone" required type="tel" placeholder="رقم الجوال" className="rounded-xl border border-input bg-background px-4 py-3 focus:border-orange focus:outline-none" />
           </div>

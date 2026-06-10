@@ -269,6 +269,13 @@ function Services() {
 }
 
 function Equipment() {
+  const fleetItems = [
+    { title: "فارشات أسفلت", desc: "ساخنة وباردة لجميع الأحجام والمواصفات" },
+    { title: "حدالات الضغط", desc: "هزّازة ومطاطية للدمك الأمثل" },
+    { title: "شاحنات النقل", desc: "معزولة للحفاظ على درجة حرارة الأسفلت" },
+    { title: "معدات التسوية", desc: "تجهيز الأرضيات بأعلى دقة" },
+  ];
+
   return (
     <section className="py-24 md:py-32 bg-[var(--gradient-navy)] text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,oklch(0.7_0.18_45/0.18),transparent_50%)]" />
@@ -284,21 +291,24 @@ function Equipment() {
             نمتلك أحدث فارشات الأسفلت، حدالات الضغط، شاحنات النقل، ومعدات التسوية،
             ونوفّرها للتأجير أو ضمن مشاريع التنفيذ بأعلى مستويات الجاهزية والكفاءة.
           </p>
-          <ul className="mt-8 space-y-3">
-            {[
-              "فارشات أسفلت ساخنة وباردة",
-              "حدالات هزّازة ومطاطية للضغط",
-              "شاحنات نقل أسفلت معزولة",
-              "معدات تسوية وتجهيز الأرضيات",
-            ].map((t) => (
-              <li key={t} className="flex items-center gap-3 text-white/90">
-                <span className="w-8 h-8 rounded-full bg-orange/20 text-orange flex items-center justify-center">
-                  <CheckCircle2 className="w-4 h-4" />
-                </span>
-                {t}
-              </li>
+
+          <div className="mt-10 grid sm:grid-cols-2 gap-4">
+            {fleetItems.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-2xl bg-white/5 border border-white/10 p-5 hover:bg-white/10 transition-colors"
+              >
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="w-10 h-10 rounded-xl bg-orange/20 text-orange flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="w-5 h-5" />
+                  </span>
+                  <h4 className="font-bold text-white text-base">{item.title}</h4>
+                </div>
+                <p className="text-white/60 text-sm leading-relaxed mr-13 pr-13">{item.desc}</p>
+              </div>
             ))}
-          </ul>
+          </div>
+
           <a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noopener" className="mt-10 inline-flex items-center gap-2 rounded-full bg-[var(--gradient-orange)] px-7 py-4 font-bold shadow-[var(--shadow-elegant)] hover:scale-[1.03] transition-transform">
             استفسر عن التأجير
             <ChevronLeft className="w-5 h-5" />

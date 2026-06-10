@@ -371,8 +371,8 @@ function WhyUs() {
             const Icon = f.icon;
             return (
               <div key={f.title} className="rounded-2xl border border-border bg-card p-8 text-center hover:border-orange/50 transition-colors">
-                <div className="mx-auto w-16 h-16 rounded-2xl bg-[var(--gradient-orange)] flex items-center justify-center shadow-[var(--shadow-soft)] animate-float">
-                  <Icon className="w-8 h-8 text-white" />
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-[image:var(--gradient-orange)] bg-orange flex items-center justify-center shadow-[var(--shadow-soft)] animate-float">
+                  <Icon className="w-8 h-8 text-white" strokeWidth={2.5} />
                 </div>
                 <h3 className="mt-5 text-lg font-bold text-navy-deep">{f.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{f.desc}</p>

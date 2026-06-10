@@ -459,7 +459,7 @@ function FAQ() {
 
 function FinalCTA() {
   return (
-    <section id="contact" className="py-24 md:py-32 relative overflow-hidden bg-[var(--gradient-navy)] text-white">
+    <section id="contact" className="py-24 md:py-32 relative overflow-hidden bg-navy-deep text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,oklch(0.7_0.18_45/0.25),transparent_55%)]" />
       <div className="container-page relative grid lg:grid-cols-2 gap-14 items-center">
         <div>

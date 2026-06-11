@@ -75,21 +75,22 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "مؤسسة ابو شهد للمقاولات",
+  name: "مقاول اسفلت محايل عسير",
   image: "/og.jpg",
   description:
-    "مؤسسة متخصصة في رصف الطرق وأعمال السفلتة والإنترلوك وتأجير المعدات وصيانة الأسفلت في منطقة عسير.",
+    "نقوم بجميع أعمال الأسفلت والرصف والتخطيط وتأجير المعدات في منطقة الجنوب مقاول أبها وخميس. مقاول اسفلت مقشوط وحار خميس مشيط أبها تندحه النماص تنومه بللسمر بللحمر جازان سبت العلايا.",
   areaServed: [
     "أبها", "خميس مشيط", "أحد رفيدة", "محايل عسير", "بيشة",
     "سراة عبيدة", "النماص", "بلقرن", "رجال ألمع", "تثليث", "المجاردة",
+    "سبت العلاية", "وادي الدواسر نجد", "نجران", "تندحه", "تنومه", "بللسمر", "بللحمر", "جازان",
   ],
   address: {
     "@type": "PostalAddress",
-    addressLocality: "أبها",
+    addressLocality: "محايل عسير",
     addressRegion: "عسير",
     addressCountry: "SA",
   },
-  telephone: "+966500000000",
+  telephone: "+966549473772",
   priceRange: "$$",
 };
 
@@ -98,18 +99,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "مؤسسة ابو شهد | مؤسسة رصف طرق وسفلتة في عسير" },
+      { title: "مقاول اسفلت محايل عسير | رصف طرق وسفلتة في الجنوب" },
       {
         name: "description",
         content:
-          "مؤسسة ابو شهد: مقاول طرق وسفلتة معتمد في منطقة عسير. رصف طرق، أعمال إنترلوك، تأجير معدات رصف، وصيانة أسفلت بأعلى المعايير.",
+          "نقوم بجميع أعمال الأسفلت والرصف والتخطيط وتأجير المعدات في منطقة الجنوب مقاول أبها وخميس. مقاول اسفلت مقشوط وحار خميس مشيط أبها تندحه النماص تنومه بللسمر بللحمر جازان سبت العلايا.",
       },
-      { name: "author", content: "مؤسسة ابو شهد" },
+      { name: "author", content: "مقاول اسفلت محايل عسير" },
       { name: "theme-color", content: "#0B1E3F" },
-      { property: "og:title", content: "مؤسسة ابو شهد | رصف طرق وسفلتة عسير" },
+      { property: "og:title", content: "مقاول اسفلت محايل عسير | رصف وسفلتة الجنوب" },
       {
         property: "og:description",
-        content: "مقاول رصف وسفلتة معتمد في عسير — رصف طرق، إنترلوك، تأجير معدات، صيانة أسفلت.",
+        content: "نقوم بجميع أعمال الأسفلت والرصف في منطقة الجنوب — مقاول أبها وخميس ومحايل عسير وبيشة والنماص.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "ar_SA" },

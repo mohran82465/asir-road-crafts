@@ -474,7 +474,7 @@ function FinalCTA() {
               <Phone className="w-5 h-5 text-orange" />
               <div>
                 <div className="text-xs text-white/60">اتصل بنا</div>
-                <div className="font-bold">{PHONE_DISPLAY}</div>
+                <div className="font-bold" dir="ltr">{PHONE_DISPLAY}</div>
               </div>
             </a>
             <a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noopener" className="flex items-center gap-3 rounded-2xl glass-dark p-5 hover:bg-white/15 transition-colors">
@@ -563,7 +563,7 @@ function Footer() {
         <div>
           <h4 className="text-white font-bold mb-4">تواصل</h4>
           <ul className="space-y-3 text-sm">
-            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-orange" /> {PHONE_DISPLAY}</li>
+            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-orange" /> <span dir="ltr">{PHONE_DISPLAY}</span></li>
             <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-orange" /> info@abu-shahd.sa</li>
             <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange" /> بيشة — منطقة عسير</li>
           </ul>

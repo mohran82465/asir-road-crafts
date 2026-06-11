@@ -18,19 +18,19 @@ const PHONE_DISPLAY = "+966 54 947 3772";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "مؤسسة ابو شهد | مؤسسة رصف طرق وسفلتة عسير - مقاول أسفلت معتمد" },
+      { title: "مقاول اسفلت محايل عسير | رصف طرق وسفلتة بأبها وخميس مشيط" },
       {
         name: "description",
         content:
-          "مؤسسة ابو شهد الرائدة في رصف طرق عسير وسفلتة عسير وأعمال الإنترلوك وتأجير معدات الرصف وصيانة الأسفلت. خدماتنا تشمل أبها، خميس مشيط، بيشة، النماص، ونجران.",
+          "نقوم بجميع أعمال الأسفلت والرصف والتخطيط وتأجير المعدات في منطقة الجنوب مقاول أبها وخميس. مقاول اسفلت مقشوط وحار خميس مشيط أبها تندحه النماص تنومه بللسمر بللحمر جازان سبت العلايا.",
       },
       {
         name: "keywords",
         content:
-          "رصف طرق عسير, سفلتة عسير, شركة اسفلت, مقاول اسفلت, تأجير معدات رصف, رصف شوارع, مقاول طرق, اسفلت أبها, سفلتة خميس مشيط",
+          "مقاول اسفلت محايل عسير, رصف طرق عسير, سفلتة عسير, مقاول اسفلت أبها, مقاول اسفلت خميس مشيط, سفلتة محايل, اسفلت بيشة, تأجير معدات رصف, مقاول طرق, اسفلت النماص, اسفلت تندحه, اسفلت بللسمر, اسفلت بللحمر, اسفلت جازان, اسفلت سبت العلايا",
       },
-      { property: "og:title", content: "مؤسسة ابو شهد | رصف وسفلتة عسير" },
-      { property: "og:description", content: "مقاول رصف وسفلتة معتمد في منطقة عسير." },
+      { property: "og:title", content: "مقاول اسفلت محايل عسير | رصف وسفلتة عسير" },
+      { property: "og:description", content: "نقوم بجميع أعمال الأسفلت والرصف والتخطيط وتأجير المعدات في منطقة الجنوب. مقاول أبها وخميس ومحايل عسير." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -63,9 +63,9 @@ const features = [
 ];
 
 const testimonials = [
-  { name: "م. عبدالله القحطاني", role: "مدير مشاريع — أبها", text: "تعاملنا مع مؤسسة ابو شهد في رصف مخطط سكني كامل، الالتزام بالموعد والجودة فاق توقعاتنا." },
-  { name: "أ. فهد الشهري", role: "مالك مجمع تجاري — خميس مشيط", text: "أفضل شركة سفلتة تعاملنا معها في المنطقة. تنفيذ احترافي ومتابعة دقيقة." },
-  { name: "م. سعد الأسمري", role: "بلدية بيشة", text: "شركاء موثوقون في مشاريع البنية التحتية، وننصح بهم لكل عمل رصف وأسفلت." },
+  { name: "م. عبدالله القحطاني", role: "مدير مشاريع — أبها", text: "تعاملنا مع مقاول اسفلت محايل عسير في رصف مخطط سكني كامل، الالتزام بالموعد والجودة فاق توقعاتنا." },
+  { name: "أ. فهد الشهري", role: "مالك مجمع تجاري — خميس مشيط", text: "أفضل مقاول اسفلت تعاملنا معه في المنطقة. تنفيذ احترافي ومتابعة دقيقة في أعمال السفلتة والرصف." },
+  { name: "م. سعد الأسمري", role: "بلدية بيشة", text: "مقاول موثوق في مشاريع البنية التحتية، وننصح بهم لكل عمل رصف وأسفلت في محايل عسير والجنوب." },
 ];
 
 const faqs = [
@@ -119,10 +119,10 @@ function Header() {
     >
       <div className="container-page flex h-20 items-center justify-between">
         <a href="#" className="flex items-center gap-3">
-          <img src={logoMark} alt="شعار مؤسسة ابو شهد" className="h-12 w-12 object-contain" width={48} height={48} />
+          <img src={logoMark} alt="شعار مقاول اسفلت محايل عسير" className="h-12 w-12 object-contain" width={48} height={48} />
           <div className="leading-tight">
-            <div className="text-lg font-extrabold text-navy-deep">مؤسسة ابو شهد</div>
-            <div className="text-[11px] text-muted-foreground">للمقاولات والرصف</div>
+            <div className="text-lg font-extrabold text-navy-deep">مقاول اسفلت</div>
+            <div className="text-[11px] text-muted-foreground">محايل عسير</div>
           </div>
         </a>
         <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-navy-deep">
@@ -155,19 +155,19 @@ function Hero() {
         <div className="max-w-3xl text-white animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <div className="inline-flex items-center gap-2 rounded-full glass-dark px-4 py-2 text-xs font-medium mb-8">
             <span className="inline-block w-2 h-2 rounded-full bg-orange animate-pulse" />
-            المؤسسة الرائدة في رصف الطرق بمنطقة عسير
+            مقاول أسفلت معتمد في محايل عسير وأبها وخميس مشيط
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.15] text-balance">
-            رصف وسفلتة عسير
+            مقاول اسفلت محايل عسير
             <span className="block mt-3 text-transparent bg-clip-text" style={{ backgroundImage: "var(--gradient-orange)" }}>
-              بمعايير عالمية
+              رصف وسفلتة بأعلى الجودة
             </span>
           </h1>
 
           <p className="mt-5 md:mt-6 text-base md:text-xl text-white/85 max-w-2xl leading-relaxed">
-            نقدم خدمات رصف الطرق، السفلتة، الإنترلوك، وتأجير المعدات في كافة محافظات عسير
-            — بأسطول حديث وفريق هندسي معتمد وضمان جودة شامل.
+            نقوم بجميع أعمال الأسفلت والرصف والتخطيط وتأجير المعدات في منطقة الجنوب
+            — مقاول أبها وخميس ومحايل عسير بخبرة واسعة وأسطول حديث.
           </p>
 
           <div className="mt-8 md:mt-10 flex flex-wrap gap-3">
@@ -541,15 +541,15 @@ function Footer() {
       <div className="container-page py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
-            <img src={logoMark} alt="مؤسسة ابو شهد" className="h-12 w-12 object-contain bg-white rounded-xl p-1" width={48} height={48} />
+            <img src={logoMark} alt="مقاول اسفلت محايل عسير" className="h-12 w-12 object-contain bg-white rounded-xl p-1" width={48} height={48} />
             <div>
-              <div className="text-xl font-extrabold text-white">مؤسسة ابو شهد</div>
-              <div className="text-xs text-white/60">للمقاولات والرصف</div>
+              <div className="text-xl font-extrabold text-white">مقاول اسفلت</div>
+              <div className="text-xs text-white/60">محايل عسير — أبها — خميس مشيط</div>
             </div>
           </div>
           <p className="mt-5 text-sm leading-relaxed max-w-md">
-            مؤسسة سعودية متخصصة في رصف الطرق وأعمال الأسفلت والإنترلوك وتأجير المعدات
-            في كافة محافظات منطقة عسير، بخبرة تتجاوز ١٥ عاماً وأسطول حديث.
+            مقاول اسفلت محايل عسير متخصص في رصف الطرق وأعمال الأسفلت والإنترلوك وتأجير المعدات
+            في كافة محافظات منطقة الجنوب، بخبرة تتجاوز ١٥ عاماً وأسطول حديث.
           </p>
         </div>
         <div>
@@ -566,12 +566,12 @@ function Footer() {
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-orange" /> <span dir="ltr">{PHONE_DISPLAY}</span></li>
             <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-orange" /> info@abu-shahd.sa</li>
-            <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange" /> بيشة — منطقة عسير</li>
+            <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange" /> محايل عسير — منطقة عسير</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center text-xs text-white/60">
-        © {new Date().getFullYear()} مؤسسة ابو شهد للمقاولات. جميع الحقوق محفوظة.
+        © {new Date().getFullYear()} مقاول اسفلت محايل عسير. جميع الحقوق محفوظة.
       </div>
     </footer>
   );

@@ -15,6 +15,49 @@ const PHONE = "+966549473772";
 const WHATSAPP = "966549473772";
 const PHONE_DISPLAY = "+966 54 947 3772";
 
+const SITE_URL = "https://asir-road-crafts.lovable.app";
+const OG_IMAGE = `${SITE_URL}${heroImg}`;
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", name: "ما هي المناطق التي تغطيها الشركة؟", acceptedAnswer: { "@type": "Answer", text: "نغطي كامل منطقة عسير: أبها، خميس مشيط، أحد رفيدة، محايل، بيشة، النماص، رجال ألمع، تثليث، المجاردة، سراة عبيدة، بلقرن، سبت العلاية، وادي الدواسر نجد، ونجران." } },
+    { "@type": "Question", name: "هل تقدمون خدمة تأجير معدات الرصف؟", acceptedAnswer: { "@type": "Answer", text: "نعم، نوفر تأجير شامل لمعدات الرصف والسفلتة (فارشات، حدالات، شاحنات) بأحدث الموديلات وبأسعار تنافسية." } },
+    { "@type": "Question", name: "هل تمنحون ضمان على الأعمال؟", acceptedAnswer: { "@type": "Answer", text: "جميع أعمالنا مغطاة بضمان فني وفق نوع المشروع، مع متابعة دورية للتأكد من جودة الأداء." } },
+    { "@type": "Question", name: "كم تستغرق دراسة عرض السعر؟", acceptedAnswer: { "@type": "Answer", text: "نوفر عرض سعر مبدئي خلال ٢٤ ساعة من زيارة الموقع، ودراسة تفصيلية خلال ٣ إلى ٥ أيام عمل." } },
+  ],
+};
+
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "مقاول أسفلت ورصف طرق",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "مقاول اسفلت محايل عسير",
+    telephone: "+966549473772",
+    areaServed: "منطقة عسير، جازان، نجران",
+    address: { "@type": "PostalAddress", addressLocality: "محايل عسير", addressRegion: "عسير", addressCountry: "SA" },
+  },
+  areaServed: [
+    "أبها", "خميس مشيط", "أحد رفيدة", "محايل عسير", "بيشة", "سراة عبيدة",
+    "النماص", "بلقرن", "رجال ألمع", "تثليث", "المجاردة", "سبت العلاية",
+    "وادي الدواسر نجد", "نجران", "جازان",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "خدمات الأسفلت والرصف",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "رصف الطرق" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "سفلتة ساخنة وباردة" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "أعمال الإنترلوك" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "تأجير معدات الرصف" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "صيانة وترميم الأسفلت" } },
+    ],
+  },
+};
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -29,11 +72,27 @@ export const Route = createFileRoute("/")({
         content:
           "مقاول اسفلت محايل عسير, رصف طرق عسير, سفلتة عسير, مقاول اسفلت أبها, مقاول اسفلت خميس مشيط, سفلتة محايل, اسفلت بيشة, تأجير معدات رصف, مقاول طرق, اسفلت النماص, اسفلت تندحه, اسفلت بللسمر, اسفلت بللحمر, اسفلت جازان, اسفلت سبت العلايا",
       },
+      { name: "geo.region", content: "SA-14" },
+      { name: "geo.placename", content: "محايل عسير" },
+      { name: "geo.position", content: "18.5460;42.0500" },
+      { name: "ICBM", content: "18.5460, 42.0500" },
+      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1" },
       { property: "og:title", content: "مقاول اسفلت محايل عسير | رصف وسفلتة عسير" },
       { property: "og:description", content: "نقوم بجميع أعمال الأسفلت والرصف والتخطيط وتأجير المعدات في منطقة الجنوب. مقاول أبها وخميس ومحايل عسير." },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: `${SITE_URL}/` },
+      { property: "og:site_name", content: "مقاول اسفلت محايل عسير" },
+      { property: "og:locale", content: "ar_SA" },
+      { property: "og:image", content: OG_IMAGE },
+      { property: "og:image:alt", content: "أعمال رصف وسفلتة في منطقة عسير" },
+      { name: "twitter:image", content: OG_IMAGE },
+      { name: "twitter:title", content: "مقاول اسفلت محايل عسير | رصف وسفلتة عسير" },
+      { name: "twitter:description", content: "أعمال أسفلت ورصف وتأجير معدات في عسير وجازان ونجران." },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: `${SITE_URL}/` }],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(faqJsonLd) },
+      { type: "application/ld+json", children: JSON.stringify(serviceJsonLd) },
+    ],
   }),
   component: Home,
 });

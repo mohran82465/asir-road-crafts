@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  Phone, MessageCircle, MapPin, Mail, Clock, ChevronLeft, CheckCircle2, Star,
+  Phone, MessageCircle, MapPin, Clock, ChevronLeft, CheckCircle2, Star,
   Truck, Construction, Hammer, Wrench, Layers, Building2, Route as RouteIcon,
   Settings, ShieldCheck, Award, Users, Quote,
 } from "lucide-react";
@@ -571,7 +571,6 @@ function Footer() {
           <h4 className="text-white font-bold mb-4">تواصل</h4>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-orange" /> <span dir="ltr">{PHONE_DISPLAY}</span></li>
-            <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-orange" /> info@abu-shahd.sa</li>
             <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange" /> محايل عسير — منطقة عسير</li>
           </ul>
         </div>

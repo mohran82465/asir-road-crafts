@@ -526,7 +526,8 @@ function FinalCTA() {
             {services.map((s) => <option key={s.title}>{s.title}</option>)}
           </select>
           <textarea name="details" rows={3} placeholder="تفاصيل المشروع" className="w-full rounded-xl border border-input bg-background px-4 py-3 text-right focus:border-orange focus:outline-none" />
-          <button type="submit" className="w-full rounded-xl bg-[var(--gradient-orange)] py-4 font-bold text-white shadow-[var(--shadow-soft)] hover:scale-[1.01] transition-transform">
+          <button type="submit" className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[var(--gradient-orange)] px-7 py-4 font-bold text-white shadow-[var(--shadow-elegant)] hover:scale-[1.03] transition-transform">
+            <MessageCircle className="w-5 h-5" />
             إرسال الطلب عبر واتساب
           </button>
         </form>

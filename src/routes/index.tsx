@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  Phone, MessageCircle, MapPin, Mail, Clock, ChevronLeft, CheckCircle2, Star,
+  Phone, MessageCircle, MapPin, Clock, ChevronLeft, CheckCircle2, Star,
   Truck, Construction, Hammer, Wrench, Layers, Building2, Route as RouteIcon,
   Settings, ShieldCheck, Award, Users, Quote,
 } from "lucide-react";

@@ -79,7 +79,7 @@ export const Route = createFileRoute("/")({
       { name: "ICBM", content: "18.5460, 42.0500" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1" },
       { property: "og:title", content: "مقاول اسفلت محايل عسير | رصف وسفلتة عسير" },
-      { property: "og:description", content: "نقوم بجميع أعمال الأسفلت والرصف والتخطيط وتأجير المعدات في منطقة الجنوب. مقاول أبها وخميس ومحايل عسير." },
+      { property: "og:description", content: "نقوم بجميع أعمال الأسفلت والرصف والتخطيط وتأجير المعدات في منطقة الجنوب. مقاول أبها وخميس ومحايل وبيشة والباحة وجازان ونجران." },
       { property: "og:url", content: `${SITE_URL}/` },
       { property: "og:site_name", content: "مقاول اسفلت محايل عسير" },
       { property: "og:locale", content: "ar_SA" },
@@ -87,7 +87,7 @@ export const Route = createFileRoute("/")({
       { property: "og:image:alt", content: "أعمال رصف وسفلتة في منطقة عسير" },
       { name: "twitter:image", content: OG_IMAGE },
       { name: "twitter:title", content: "مقاول اسفلت محايل عسير | رصف وسفلتة عسير" },
-      { name: "twitter:description", content: "أعمال أسفلت ورصف وتأجير معدات في عسير وجازان ونجران." },
+      { name: "twitter:description", content: "أعمال أسفلت ورصف وتأجير معدات في عسير وجازان ونجران والباحة والجنوب." },
     ],
     links: [{ rel: "canonical", href: `${SITE_URL}/` }],
     scripts: [

@@ -184,7 +184,7 @@ function Header() {
           <img src={logoMark} alt="شعار مقاول اسفلت محايل عسير" className="h-12 w-12 object-contain" width={48} height={48} />
           <div className="leading-tight">
             <div className="text-lg font-extrabold text-navy-deep">مقاول اسفلت</div>
-            <div className="text-[11px] text-muted-foreground">محايل عسير</div>
+            <div className="text-[11px] text-muted-foreground">عسير</div>
           </div>
         </a>
         <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-navy-deep">

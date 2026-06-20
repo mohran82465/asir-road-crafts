@@ -637,8 +637,16 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10 py-5 text-center text-xs text-white/60">
-        © {new Date().getFullYear()} مقاول اسفلت محايل عسير. جميع الحقوق محفوظة.
+      <div className="border-t border-white/10 py-5">
+        <div className="container-page flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="text-xs text-white/60">
+            © {new Date().getFullYear()} مقاول اسفلت عسير. جميع الحقوق محفوظة.
+          </div>
+          <div className="inline-flex items-center gap-2 rounded-full bg-[#006C35]/20 border border-[#006C35]/30 px-4 py-1.5 text-xs font-bold text-white">
+            <span className="inline-block w-2.5 h-2.5 rounded-full bg-[#006C35] ring-2 ring-white/30" />
+            شركة سعودية 100٪ — صُنع في المملكة العربية السعودية
+          </div>
+        </div>
       </div>
     </footer>
   );

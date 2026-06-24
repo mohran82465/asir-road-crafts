@@ -181,10 +181,10 @@ function Header() {
     >
       <div className="container-page flex h-20 items-center justify-between">
         <a href="#" className="flex items-center gap-3">
-          <img src={logoMark} alt="شعار مقاول اسفلت محايل عسير" className="h-12 w-12 object-contain" width={48} height={48} />
+          <img src={logoMark} alt="شعار مقاول أسفلت بيشة" className="h-12 w-12 object-contain" width={48} height={48} />
           <div className="leading-tight">
             <div className="text-lg font-extrabold text-navy-deep">مقاول اسفلت</div>
-            <div className="text-[11px] text-muted-foreground">عسير</div>
+            <div className="text-[11px] text-muted-foreground">بيشة</div>
           </div>
         </a>
         <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-navy-deep">
@@ -208,7 +208,7 @@ function Hero() {
   return (
     <section className="relative min-h-[100vh] flex items-center overflow-hidden pt-24">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="معدات رصف الطرق في عسير" className="w-full h-full object-cover" width={1920} height={1080} />
+        <img src={heroImg} alt="أعمال سفلتة ومداخل فلل في بيشة" className="w-full h-full object-cover" width={1920} height={1080} />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,oklch(0.7_0.18_45/0.18),transparent_60%)]" />
       </div>
@@ -217,19 +217,19 @@ function Hero() {
         <div className="max-w-3xl text-white animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <div className="inline-flex items-center gap-2 rounded-full glass-dark px-4 py-2 text-xs font-medium mb-8">
             <span className="inline-block w-2 h-2 rounded-full bg-orange animate-pulse" />
-            مقاول أسفلت معتمد في محايل عسير وأبها وخميس مشيط
+            مقاول أسفلت معتمد في بيشة وأبها وخميس مشيط
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[1.15] text-balance">
-            مقاول اسفلت محايل عسير
+            مقاول أسفلت بيشة
             <span className="block mt-3 text-transparent bg-clip-text" style={{ backgroundImage: "var(--gradient-orange)" }}>
-              رصف وسفلتة بأعلى الجودة
+              مداخل فلل ومزارع ومنازل
             </span>
           </h1>
 
           <p className="mt-5 md:mt-6 text-base md:text-xl text-white/85 max-w-2xl leading-relaxed">
-            نقوم بجميع أعمال الأسفلت والرصف والتخطيط وتأجير المعدات في منطقة الجنوب
-            — مقاول أبها وخميس ومحايل عسير بخبرة واسعة وأسطول حديث.
+            تنفيذ مداخل الفلل والمزارع والمنازل باحترافية في بيشة وكافة محافظات عسير،
+            من أعمال التأسيس حتى السفلتة النهائية، بجودة عالية وأسعار تنافسية وضمان على التنفيذ.
           </p>
 
           <div className="mt-8 md:mt-10 flex flex-wrap gap-3">
@@ -609,15 +609,15 @@ function Footer() {
       <div className="container-page py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
-            <img src={logoMark} alt="مقاول اسفلت محايل عسير" className="h-12 w-12 object-contain bg-white rounded-xl p-1" width={48} height={48} />
+          <img src={logoMark} alt="مقاول أسفلت بيشة" className="h-12 w-12 object-contain bg-white rounded-xl p-1" width={48} height={48} />
             <div>
               <div className="text-xl font-extrabold text-white">مقاول اسفلت</div>
-              <div className="text-xs text-white/60">محايل عسير — أبها — خميس مشيط</div>
+              <div className="text-xs text-white/60">بيشة — أبها — خميس مشيط</div>
             </div>
           </div>
           <p className="mt-5 text-sm leading-relaxed max-w-md">
-            مقاول اسفلت محايل عسير متخصص في رصف الطرق وأعمال الأسفلت والإنترلوك وتأجير المعدات
-            في كافة محافظات منطقة الجنوب، بخبرة تتجاوز ١٥ عاماً وأسطول حديث.
+            مقاول أسفلت بيشة متخصص في تنفيذ مداخل الفلل والمزارع والمنازل وأعمال الرصف والإنترلوك وتأجير المعدات
+            في كافة محافظات منطقة عسير، بخبرة تتجاوز ١٥ عاماً وأسطول حديث.
           </p>
         </div>
         <div>
@@ -633,14 +633,14 @@ function Footer() {
           <h4 className="text-white font-bold mb-4">تواصل</h4>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-orange" /> <span dir="ltr">{PHONE_DISPLAY}</span></li>
-            <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange" /> محايل عسير — منطقة عسير</li>
+            <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-orange" /> بيشة — منطقة عسير</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/10 py-5">
         <div className="container-page flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-xs text-white/60">
-            © {new Date().getFullYear()} مقاول اسفلت عسير. جميع الحقوق محفوظة.
+            © {new Date().getFullYear()} مقاول أسفلت بيشة. جميع الحقوق محفوظة.
           </div>
           <div className="inline-flex items-center gap-2 rounded-full bg-[#006C35]/20 border border-[#006C35]/30 px-4 py-1.5 text-xs font-bold text-white">
             <span className="inline-block w-2.5 h-2.5 rounded-full bg-[#006C35] ring-2 ring-white/30" />

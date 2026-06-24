@@ -32,16 +32,16 @@ const faqJsonLd = {
 const serviceJsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
-  serviceType: "مقاول أسفلت ورصف طرق",
+  serviceType: "مقاول أسفلت بيشة",
   provider: {
     "@type": "LocalBusiness",
-    name: "مقاول اسفلت محايل عسير",
+    name: "مقاول أسفلت بيشة",
     telephone: "+966549473772",
-    areaServed: "منطقة عسير، جازان، نجران، الباحة",
-    address: { "@type": "PostalAddress", addressLocality: "محايل عسير", addressRegion: "عسير", addressCountry: "SA" },
+    areaServed: "منطقة عسير — بيشة",
+    address: { "@type": "PostalAddress", addressLocality: "بيشة", addressRegion: "عسير", addressCountry: "SA" },
   },
   areaServed: [
-    "أبها", "خميس مشيط", "أحد رفيدة", "محايل عسير", "بيشة", "سراة عبيدة",
+    "بيشة", "أبها", "خميس مشيط", "أحد رفيدة", "محايل عسير", "سراة عبيدة",
     "النماص", "بلقرن", "رجال ألمع", "تثليث", "المجاردة", "سبت العلاية",
     "وادي الدواسر نجد", "نجران", "جازان", "العديد", "النقيع", "الجوف",
     "الجنوب", "ظهران", "الباحة", "بللحمر", "بللسمر", "طريب",

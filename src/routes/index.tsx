@@ -15,7 +15,7 @@ const PHONE = "+966549473772";
 const WHATSAPP = "966549473772";
 const PHONE_DISPLAY = "+966 54 947 3772";
 
-const SITE_URL = "https://asir-road-crafts.lovable.app";
+const SITE_URL = "https://aboshad.com";
 const OG_IMAGE = `${SITE_URL}${heroImg}`;
 
 const faqJsonLd = {

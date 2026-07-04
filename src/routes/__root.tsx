@@ -76,7 +76,7 @@ const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "مقاول أسفلت بيشة",
-  image: "/og.jpg",
+image: "https://aboshad.com/og.jpg",
   description:
     "مقاول أسفلت بيشة لتنفيذ مداخل الفلل والمزارع والمنازل باحترافية، من أعمال التأسيس حتى السفلتة النهائية، بجودة عالية وأسعار تنافسية وضمان على التنفيذ.",
   areaServed: [

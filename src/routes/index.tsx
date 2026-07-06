@@ -180,7 +180,7 @@ function Header() {
       }`}
     >
       <div className="container-page flex h-20 items-center justify-between">
-        <a href="#" className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3">
           <img src={logoMark} alt="شعار مقاول أسفلت بيشة" className="h-12 w-12 object-contain" width={48} height={48} />
           <div className="leading-tight">
             <div className="text-lg font-extrabold text-navy-deep">مقاول اسفلت</div>
